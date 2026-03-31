@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio | {{ data.nickname }}</title>
+    <style>
+        :root { --primary: #2563eb; --text: #1f2937; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .bio-card { background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 400px; width: 90%; text-align: center; border-top: 5px solid var(--primary); }
+        h1 { margin: 10px 0; font-size: 1.5rem; }
+        .tag { background: #dbeafe; color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .info { margin-top: 20px; text-align: left; font-size: 0.9rem; line-height: 1.6; }
+        .motto { font-style: italic; color: #64748b; margin-top: 15px; font-size: 0.85rem; }
+        .status { margin-top: 20px; font-size: 0.7rem; color: #10b981; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <div class="bio-card">
+        <span class="tag">PaaS Automation</span>
+        <h1>{{ data.name }}</h1>
+        <div class="info">
+            <strong>Asal:</strong> {{ data.origin }}<br>
+            <strong>Kampus:</strong> {{ data.university }}<br>
+            <strong>Bidang:</strong> {{ data.interest }}
+        </div>
+        <p class="motto">"{{ data.motto }}"</p>
+        <div class="status">● Automated via Vercel CI/CD</div>
+    </div>
+</body>
+</html>
