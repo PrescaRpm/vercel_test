@@ -3,8 +3,8 @@ def get_biography_data():
         "name": "Rifky Putra Mahardika",
         "nickname": "Mahardika",
         "major": "Teknologi Informasi",
-        "university": "Harvard Cihuyyyy",
-        "origin": "Tanjung, Tabalong",
+        "university": "Universitas Lambung Mangkurat",
+        "origin": "Banjarbaru",
         "interest": "UI/UX & Big Data",
         "motto": "Membangun solusi digital dari Kalimantan untuk dunia."
     }
