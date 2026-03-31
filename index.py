@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Mengambil data dari data layer (Clean Architecture)
     my_bio = get_biography_data()
     return render_template('index.html', data=my_bio)
 
